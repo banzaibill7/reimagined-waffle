@@ -1,0 +1,36 @@
+//Para que possamos mostrar as informações de um scriptable object em nossa UI ingame, precisamos desse script,
+//que vai designar qual elemento da UI (ou seja quais partes do Game Object do tipo UI criado na Unity)vão mostrar
+//os dados que queremos.
+//Para fazer isso precisamos criar um COMPONENT no Game Object que queremos usar para mostrar nosso Card,
+//usando o caminho Game Object > Add Component > Digitar nome do script e criar OU selecionar New Script > C# > Create and Add.
+
+
+public class CardDisplay : MonoBehaviour 
+{
+//Usando o método "Start" pois a carta será gerada ao iniciar o jogo, no nosso caso.
+void Start () 
+  {
+  public Card card;
+  //"public" para que seja acessível por todos os métodos e mostrado no menu Inspector da Unity.
+  //"Card" pois é o nome do nosso Scriptable Object criado no projeto.
+  //"card" é o nome do campo que será mostrado e acessado por esse e outros scrpits.
+  }
+}
+
+
+
+//Exemplo de código limpo
+
+public class CardDisplay : MonoBehaviour 
+{
+
+void Start () 
+  {
+  public Card card;
+  
+  
+  
+  
+  
+  }
+}
