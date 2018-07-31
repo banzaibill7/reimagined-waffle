@@ -5,11 +5,11 @@
 
 
 //Estrutura do Scriptable Object (como abrir).
-public class NOMEDOSCRIPT : DEVIADODE?
+public class NOMEDOSCRIPT : DERIVADODE?
 {
   //"public" pois pode ser acessado de todos os métodos e classes
   //nome do script deve ser o nome do arquivo .cs
-  //"DEVIADODE?" se for MonoBehaviour ele deve ser vinculado a um Objeto, para ter propriedades. Porém,
+  //"DERIVADODE?" se for MonoBehaviour ele deve ser vinculado a um Objeto, para ter propriedades. Porém,
   //nesse caso queremos que ele seja "independente", e consiga armazenar informações sem necessidade de estar vinculado
   //a um Game Object. Então usamos "ScriptableObject" que é o tipo do objeto em questão.
  
@@ -23,6 +23,10 @@ public class NOMEDOSCRIPT : DEVIADODE?
   public int attack;
   public int health;
 
+  public void Print () //Esse é um método para mostrar informações sobre esse Scriptable Object, que vai ser chamado no CardDisplay
+  {
+  Debug.Log(name + ":" + description + "This card costs: " + manaCost);
+  }
 }
 
 //Exemplo - Fazendo uma carta de TCG ou Online Card Game(onde o nome do arquivo é "Card"):
@@ -38,4 +42,9 @@ public class Card : ScriptableObject
   public int manaCost;
   public int attack;
   public int health;
+  
+  public void Print () 
+  {
+  
+  }
 }
