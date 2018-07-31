@@ -1,0 +1,19 @@
+Primeiro precisamos criar um script com o nome do Scriptable Object 
+(ex: Card) 
+
+Aí dentro desse Scriptable Object vamos inserir as informações que queremos dentro dele em forma de variáveis 
+(ex; public int vida; ou public int manaCost;), usando public na frente podemos alterar seus valores no Inspector da Unity.
+
+Depois precisamos criar um Script e forma de COMPONENT de um Game Object existente para mostrar essas informações dentro do jogo, 
+se essa for a intenção. Precisa ser criado como COMPONENT porque vamos usar o Game Object.
+(ex: CardDisplay) 
+
+Dentro do CardDisply precisamos criar uma instrução que vai referenciar o Scriptable Object que criamos, para assim conseguir
+acessar seus dados. 
+(ex; public Card card; public para aparecer no inspector, Card que é o nome do object que quermos acessar
+e card que é o nome da keyword que vamos usar para acessar os dados (ex: card.vida <<< assim acessamos a informação "vida" que é
+a variável que criamos dentro do nosso objeto em script)) 
+
+Mas para realmente conseguir acessar isso, é necessário arrastar o
+Scriptable Object que criamos para dentro do component que criamos, no campo que criamos através do script de Display,
+no Game Object escolhido como display.
