@@ -1,0 +1,28 @@
+using UnityEngine.UI;
+
+public class SwordDisplay : MonoBehaviour {
+
+  public Sword sword;
+  
+  public Text nameText;
+  public Text descriptionText;
+  
+  public Image artworkImage;
+  
+  public Text attackText;
+  public Text requiredLvText;
+  
+  void Start () 
+  {
+  nameText.text = sword.name;
+  descriptionText.text = sword.description;
+  
+  artworkImage.sprite = sword.artwork;
+  
+  attackText.text = sword.attack.ToString();
+  requiredLvText.text = sword.requiredLv.ToString();
+  
+  }
+
+
+}
