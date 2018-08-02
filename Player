@@ -1,0 +1,40 @@
+
+
+public class PMove : MonoBehaviour ()
+{
+  
+  public float speed = 3.0f;
+
+
+  
+  
+  private void Start ()
+  {
+    transfor.position = new Vector2(0,0);
+  }
+
+  
+  
+  
+  private void Update()
+  {
+    if (Input.GetKeyDown(KeyCode.D))
+    {
+    transform.Translate(Vector2.right * Time.deltaTime * speed);
+    
+    }
+    
+    if (Input.GetKeyDown(KeyCode.A))
+    {
+    transform.Translate(Vector2.left * Time.deltaTime * speed);
+    
+    }
+    
+    if (Input.GetKeyDown(KeyCode.W))
+    {
+    transform.Translate(Vector2.left * Time.deltaTime * speed);
+    
+    }
+  }
+
+}
