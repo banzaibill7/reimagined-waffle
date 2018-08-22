@@ -130,7 +130,7 @@ public class PlayerController : MonoBehaviour {
             dashTime -= Time.deltaTime;
             rb.velocity = transform.right * dashSpeed;
         }
-        else if (transform.localScale.x < 0 && isDashing == true && dashTime > 0)
+        else if (transform.localScale.x < 0 && isDashing == true && dashTime < 0)
         {
             dashTime -= Time.deltaTime;
             rb.velocity = -transform.right * dashSpeed;
