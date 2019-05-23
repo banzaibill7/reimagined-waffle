@@ -8,7 +8,7 @@ public class CsharpCourse : MonoBehavior
   
   void Start()
   {
-    nst();
+    Inst();
     
   }
   
@@ -17,7 +17,7 @@ public class CsharpCourse : MonoBehavior
     Instantiate(ball, transform.position, transform.rotation); 
     
     //Instanciando o objeto criado, usando posição e rotação do
-    objeto vazio que o script está atrelado.
+    //objeto vazio que o script está atrelado.
   }
   
 }
