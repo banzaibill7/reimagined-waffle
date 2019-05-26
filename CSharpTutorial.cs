@@ -1,7 +1,9 @@
 USEFUL STUFF
 Debug.Log("Print shit inside Console");
 Destroy(gameObject, 3f); //Destroy target game object fater the amount of time specified
-Randim.Range(0, 7); //chooses a random number between te first a last one
+Random.Range(0, 7); //chooses a random number between te first a last one
+Quaternion.Euler(x.y.z);//Stores rotation.
+
 
 VARIABLES
 
